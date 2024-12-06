@@ -1,4 +1,4 @@
-import logo from '../logo.svg';
+//import logo from '../logo.svg';
 import React from 'react'
 import Hello from '../hello/Hello';
 import Length from '../length/Length';
@@ -41,11 +41,11 @@ class App extends React.Component
           //   </header>
           // </div>
           <>
-          {/* <Hello name="Max"/>
+          <Hello name="Max"/>
           <Length />
           <Form />
-          <Range /> */}
-          
+          <Range />
+
           <Posts posts = {this.state.posts}/>
 
           </>
