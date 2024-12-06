@@ -4,9 +4,10 @@ class Hello extends React.Component
     constructor(props)
     {
         super(props);//super - базовый класс. В этой строке явно вызывается конструктор базового класса.
-        this.state = {name: props.name}//This – это объект (ссылка на объект) для которого вызывается метод, 
-                                       //в данном случае - constructor
-        this.state = {status:false}
+        this.state = {                  //This – это объект (ссылка на объект) для которого вызывается метод, 
+            name: props.name,           //в данном случае - constructor                             
+            status:false
+        };
     }
     buttonHandler = () => 
         //this.state.setState(this.state => ({status : status === 'Остановлен' ? 'Запущен' : 'Остановлен'}));
