@@ -5,6 +5,7 @@ function Post(props)
             <fieldset>
                 <legend style={{fontWeight:"bold"}}>{props.name}</legend>
                 <p>{props.title}</p>
+                <button onClick={() => props.removePost(props.id)}>Delete</button>
             </fieldset>
         </div>
     )

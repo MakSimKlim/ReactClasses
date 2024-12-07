@@ -10,6 +10,8 @@ function Posts(props)
                         key={post.id}
                         name={post.name}
                         title={post.title}
+                        id={post.id}
+                        removePost={props.removePost}
                     />
                 ))
             }

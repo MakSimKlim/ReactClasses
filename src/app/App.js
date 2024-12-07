@@ -1,11 +1,12 @@
 //import logo from '../logo.svg';
 import React from 'react'
-import Hello from '../hello/Hello';
-import Length from '../length/Length';
-import Form from '../form/Form';
-import Range from '../range/Range';
-import Posts from '../posts/Posts'
-
+// import Hello from '../hello/Hello';
+// import Length from '../length/Length';
+// import Form from '../form/Form';
+// import Range from '../range/Range';
+// import Posts from '../posts/Posts'
+import Test from '../test/Test'
+import User from '../user/User'
 
 import './App.css';
 
@@ -19,8 +20,14 @@ class App extends React.Component
       {id:"1", name:"C++ Basics", title:"Процедурное программирование на языке C++"},
       {id:"2", name:"C++ OOP", title:"Объектно-ориентированное программирование на языке C++"},
       {id:"3", name:"Windows via C/C++", title:"Разработка Windows приложений на языке C++"},
-    ]
+    ],
+    show:false
   }
+
+  buttonSetUserVisibility = () => this.setState({show:!this.state.show})
+
+  //removePost = (id) => this.setState({posts:this.state.posts.filter(post => post.id !== id)})
+
     render()
     {
           return (
@@ -41,13 +48,22 @@ class App extends React.Component
           //   </header>
           // </div>
           <>
-          <Hello name="Max"/>
+       
+
+          {/* <Hello name="Max"/>
           <Length />
           <Form />
-          <Range />
+          <Range /> */}
 
-          <Posts posts = {this.state.posts}/>
+          {/* <Posts posts = {this.state.posts} removePost={this.removePost}/> */}
 
+          {/* <User /> */}
+
+          {/* <Test arg={50}/> */}
+
+          <button onClick={this.buttonSetUserVisibility}>{this.state.show?"Hide":"Show"} User</button>
+          <br/>
+          {this.state.show ? <User /> : "Невероятно секретная информация"}
           </>
         );
       }
