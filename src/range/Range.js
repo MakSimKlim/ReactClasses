@@ -10,8 +10,7 @@ class Range extends React.Component
         return(
             <>            
                 <input type="range" min="100" max="200" value={this.state.number} onChange={this.range}/>
-                <p>{this.state.number}</p>
-                <hr/>
+                <p>{this.state.number}</p>                
             </>
         )
     }

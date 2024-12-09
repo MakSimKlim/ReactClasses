@@ -28,7 +28,7 @@ class Length extends React.Component
                 <div><input size={this.state.length}/></div>
                 <button onClick={this.add}>Увеличить</button>
                 <button onClick={this.reset}>Сбросить</button> 
-                <hr/>               
+                             
             </>
         )
     }

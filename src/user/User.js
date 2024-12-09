@@ -22,12 +22,13 @@ class User extends React.Component
     render()
     {
         return(
-            
+            <>
             <div>
                 <ul>Name:Anna</ul>
                 <ul>Email:anya@mishanya.ru</ul>
                 <ul>+78901234567</ul>
-            </div>
+            </div>            
+            </>
         )
     }
 

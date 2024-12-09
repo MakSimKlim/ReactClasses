@@ -20,7 +20,7 @@ class Hello extends React.Component
                 <div>Привет {this.state.name} из STATE!</div>
                 <button onClick={this.buttonHandler}>{this.state.status ? 'Остановить' : 'Запустить'}</button>
                 <div>{this.state.status ? 'Запущен' : 'Остановлен'}</div>
-                <hr/>
+                
             </>
         )
         //state

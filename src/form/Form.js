@@ -11,8 +11,8 @@ class Form extends React.Component
     render()
     {
         return(
+            <>
             <div>
-                <hr/>
                 <form>
                     {/* Name:<input value={this.state.name} onChange={this.updateName}/>
                     <br/>
@@ -22,9 +22,9 @@ class Form extends React.Component
                     Email:<input value={this.state.email} name="email" onChange={this.update}/>
                 </form>
                 <p>{this.state.name}</p>
-                <p>{this.state.email}</p>
-                <hr/>
+                <p>{this.state.email}</p>                
             </div>
+            </>
         )
     }
 }

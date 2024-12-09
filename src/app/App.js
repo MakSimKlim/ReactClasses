@@ -1,10 +1,10 @@
 //import logo from '../logo.svg';
 import React from 'react'
-// import Hello from '../hello/Hello';
-// import Length from '../length/Length';
-// import Form from '../form/Form';
-// import Range from '../range/Range';
-// import Posts from '../posts/Posts'
+import Hello from '../hello/Hello';
+import Length from '../length/Length';
+import Form from '../form/Form';
+import Range from '../range/Range';
+import Posts from '../posts/Posts'
 import Test from '../test/Test'
 import User from '../user/User'
 
@@ -26,7 +26,7 @@ class App extends React.Component
 
   buttonSetUserVisibility = () => this.setState({show:!this.state.show})
 
-  //removePost = (id) => this.setState({posts:this.state.posts.filter(post => post.id !== id)})
+  removePost = (id) => this.setState({posts:this.state.posts.filter(post => post.id !== id)})
 
     render()
     {
@@ -47,23 +47,35 @@ class App extends React.Component
           //     </a>
           //   </header>
           // </div>
-          <>
-       
 
-          {/* <Hello name="Max"/>
+          <>       
+
+          <Hello name="Max"/>
+          <hr/>
+
           <Length />
+          <hr/>
+
           <Form />
-          <Range /> */}
+          <hr/>
 
-          {/* <Posts posts = {this.state.posts} removePost={this.removePost}/> */}
+          <Range />
+          <hr/>
 
-          {/* <User /> */}
+          <Posts posts = {this.state.posts} removePost={this.removePost}/>
+          <hr/>
 
-          {/* <Test arg={50}/> */}
+          <User />
+          <hr/>
 
+          <Test arg={50}/>
+          <hr/>
+          
           <button onClick={this.buttonSetUserVisibility}>{this.state.show?"Hide":"Show"} User</button>
           <br/>
           {this.state.show ? <User /> : "Невероятно секретная информация"}
+          <hr/>
+
           </>
         );
       }
