@@ -14,6 +14,9 @@ class Form extends React.Component
             <>
             <div>
                 <form>
+                ********Редактируемые формы********
+                <br/>
+                <br/>
                     {/* Name:<input value={this.state.name} onChange={this.updateName}/>
                     <br/>
                     Email:<input value={this.state.email} onChange={this.updateEmail}/> */}

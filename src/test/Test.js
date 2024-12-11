@@ -47,6 +47,8 @@ class Test extends React.Component
                     console.log("render 2")
                 }
                 <div>
+                ********Нажми на кнопку - получишь результат +1********
+                        <br/>
                     <button onClick={this.buttonHandler}>Start</button>
                 </div>
                 <div>

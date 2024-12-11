@@ -7,6 +7,7 @@ import Range from '../range/Range';
 import Posts from '../posts/Posts'
 import Test from '../test/Test'
 import User from '../user/User'
+import Convert from '../convert/Convert';
 
 import './App.css';
 
@@ -71,9 +72,15 @@ class App extends React.Component
           <Test arg={50}/>
           <hr/>
           
+          ********Скрытая информация под катом (жми кнопку)********
+                <br/>
+                <br/>
           <button onClick={this.buttonSetUserVisibility}>{this.state.show?"Hide":"Show"} User</button>
           <br/>
           {this.state.show ? <User /> : "Невероятно секретная информация"}
+          <hr/>
+
+          <Convert /> 
           <hr/>
 
           </>

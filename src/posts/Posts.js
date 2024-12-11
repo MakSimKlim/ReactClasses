@@ -5,6 +5,9 @@ function Posts(props)
     return(
         <>       
         <div>
+        ********Посты, которые можно удалить********
+        <br/>
+        <br/>
             {
                 props.posts.map(post => (
                     <Post

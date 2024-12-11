@@ -8,7 +8,9 @@ class Range extends React.Component
     render()
     {
         return(
-            <>            
+            <>     
+                ********Бегунок********
+                <br/>       
                 <input type="range" min="100" max="200" value={this.state.number} onChange={this.range}/>
                 <p>{this.state.number}</p>                
             </>

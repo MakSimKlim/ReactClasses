@@ -25,6 +25,9 @@ class Length extends React.Component
     {
         return(
             <>
+                ********Увеличить или уменьшить длину строки ввода********
+                <br/>
+                <br/>
                 <div><input size={this.state.length}/></div>
                 <button onClick={this.add}>Увеличить</button>
                 <button onClick={this.reset}>Сбросить</button> 

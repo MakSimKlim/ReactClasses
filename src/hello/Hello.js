@@ -16,6 +16,9 @@ class Hello extends React.Component
     {
         return(
             <>
+                ********Вывод приветственного сообщения********
+                <br/>
+                <br/>
                 <div>Привет {this.props.name} из PROPS!</div>
                 <div>Привет {this.state.name} из STATE!</div>
                 <button onClick={this.buttonHandler}>{this.state.status ? 'Остановить' : 'Запустить'}</button>

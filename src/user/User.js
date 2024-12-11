@@ -24,6 +24,8 @@ class User extends React.Component
         return(
             <>
             <div>
+            ********Информация о пользователе********
+                <br/>
                 <ul>Name:Anna</ul>
                 <ul>Email:anya@mishanya.ru</ul>
                 <ul>+78901234567</ul>
